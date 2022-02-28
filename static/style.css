@@ -1,0 +1,52 @@
+
+
+body {
+  background-color: lightpink;
+  text-align: center;
+    font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+}
+h1 {
+
+  color: darkslategrey;
+  font-size: xxx-large;
+}
+
+h2 {
+  color: darkgrey;
+  font-size: x-large;
+}
+
+nav {
+  color: mintcream;
+  text-align: center;
+
+}
+
+main {
+  color: mintcream;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightseagreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
