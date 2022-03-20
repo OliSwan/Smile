@@ -1,4 +1,10 @@
+img {
+  opacity: 1;
+}
 
+img:hover {
+  opacity: 0.75;
+}
 
 body {
   background-color: lightpink;
@@ -7,6 +13,7 @@ body {
   font-size: 30px;
   text-shadow: 3px 3px 3px #ababab;
 }
+
 h1 {
 
   color: darkslategrey;
