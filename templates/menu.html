@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
-    <link rel="stylesheet" href="/smile/static/style.css">
+    <link rel="stylesheet" href="/static/style.css">
     <title>osu.ppy</title>
 </head>
 
@@ -17,14 +17,25 @@
     </header>
 
     <nav>
-        <a href="/Smile/templates/home.html">home</a> &#8226;
-        <a href="/Smile/templates/menu.html">menu</a> &#8226;
-        <a href="/Smile/templates/contact.html">contact</a>
+        <a href="/templates/home.html">home</a> &#8226;
+        <a href="/templates/menu.html">menu</a> &#8226;
+        <a href="/templates/contact.html">contact</a>
     </nav>
     <main>
         <br>
         <-----some content----->
+
+        {% for product in products %}
+        <div class="product-box">
+            <h3>{{ product[0] }}</h3>
+            <p>{{ product[1] }}</p>
+            <p><strong>Volume:</strong>{{ product[2] }}</p>
+            <p><strong>price:</strong>${{ product[3] }}</p>
+            <img src="https://lh3.googleusercontent.com/Xoiri9Tb7Rve0lrbRJlVZm1djE3IYnsH3LapVnfQHIwzZw1tNLn_FwnI0l01t-S-v7CgnSQtvfv5xlI=w1920-h969">
+        </div>
+        {% endfor %}
     </main>
+
 </div>
 <script src="js/script.js"></script>
 <body>
