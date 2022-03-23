@@ -17,27 +17,28 @@
     </header>
 
     <nav>
-        <a href="/templates/home.html">home</a> &#8226;
-        <a href="/templates/menu.html">menu</a> &#8226;
-        <a href="/templates/contact.html">contact</a>
+       <a href="/">home</a> &#8226;
+        <a href="/menu">menu</a> &#8226;
+        <a href="/contact">contact</a>
     </nav>
     <main>
         <br>
         <-----some content----->
-
+        <div class="product-container">
         {% for product in products %}
         <div class="product-box">
             <h3>{{ product[0] }}</h3>
             <p>{{ product[1] }}</p>
             <p><strong>Volume:</strong>{{ product[2] }}</p>
-            <p><strong>price:</strong>${{ product[3] }}</p>
+            <p><strong>price:</strong>${{ product[4] }}</p>
             <img src="https://lh3.googleusercontent.com/Xoiri9Tb7Rve0lrbRJlVZm1djE3IYnsH3LapVnfQHIwzZw1tNLn_FwnI0l01t-S-v7CgnSQtvfv5xlI=w1920-h969">
+        </div>
         </div>
         {% endfor %}
     </main>
 
 </div>
-<script src="js/script.js"></script>
+
 <body>
 
 </body>
