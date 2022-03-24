@@ -24,15 +24,15 @@
     <main>
         <br>
         <-----some content----->
-        <div class="product-container">
+        <div class="products">
         {% for product in products %}
-        <div class="product-box">
-            <h3>{{ product[0] }}</h3>
-            <p>{{ product[1] }}</p>
-            <p><strong>Volume:</strong>{{ product[2] }}</p>
-            <p><strong>price:</strong>${{ product[4] }}</p>
-            <img src="https://lh3.googleusercontent.com/Xoiri9Tb7Rve0lrbRJlVZm1djE3IYnsH3LapVnfQHIwzZw1tNLn_FwnI0l01t-S-v7CgnSQtvfv5xlI=w1920-h969">
-        </div>
+            <div class="product-box">
+                <h3>{{ product[0] }}</h3>
+                <p>{{ product[1] }}</p>
+                <p><strong>Volume:</strong>{{ product[2] }}</p>
+                <p><strong>price:</strong>${{ product[4] }}</p>
+                <img src="https://c8.alamy.com/comp/2GG5MMT/lil-uzi-vert-attends-the-18-year-anniversary-of-jay-zs-4040-club-in-new-york-city-on-aug-28-2021-the-club-was-shuttered-for-18-months-due-to-the-covid-19-pandemic-and-re-opened-earlier-this-month-photo-by-gabriele-holtermannsipa-usa-2GG5MMT.jpg">
+            </div>
         </div>
         {% endfor %}
     </main>

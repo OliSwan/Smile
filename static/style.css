@@ -1,70 +1,215 @@
-img {
-  opacity: 1;
-}
-
-img:hover {
-  opacity: 0.75;
-}
-
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.product-box {
-  width: 25%;
-  background-color: lightseagreen;
+* {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: grey;
-  text-align: center;
-  font-size: 30px;
-}
-
-h1 {
-
-  color: darkslategrey;
-  font-size: xxx-large;
-}
-
-h2 {
-  color: darkgrey;
-  font-size: x-large;
-}
-
-nav {
-  color: mintcream;
-  text-align: center;
-
+    background-color: rgba(236, 240, 241, 1.0);
 }
 
 main {
-  color: mintcream;
-}
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
+    text-align: center;
+    align-content: center;
 }
 
-a:visited {
-  color: lightseagreen;
-  background-color: transparent;
-  text-decoration: none;
+header {
+    padding-top: 1em;
 }
 
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
+
+.container {
+    width: 60vw;
+    margin: auto;
+    /*background-color: rgba(52, 73, 94, 1.0);*/
+    /*color: rgba(236, 240, 241, 1.0);*/
 }
 
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+}
+
+nav {
+    background-color: rgb(44, 48, 44); /* darkest blue */
+    text-align: center;
+    /*color: rgba(52, 152, 219, 1.0);!*light blue*!*/
+    font-size: 1.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.7rem;
+    color: rgb(255, 251, 0); /*light blue*/
+}
+
+.navbar-brand {
+    display: inline;
+    float: left;
+}
+
+.navbar-links {
+    display: inline;
+    float: right;
+}
+
+nav a {
+    /*margin:0 0.5rem;*/
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+
+    /*border: 1px solid rgba(52, 152, 219, 1.0);*/
+    /*border-radius:0.5rem;*/
+}
+
+nav a:hover {
+    color: rgb(236, 239, 236);
+    background-color: rgb(234, 142, 255);
+    border-bottom: 3px solid rgb(234, 142, 255);
+}
+
+a, a:visited {
+    color: inherit;
+    /*color:hotpink;*/
+    text-decoration: none;
+}
+
+.product-box img {
+    /*max-width:200px;*/
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.product-box {
+    width: 25%;
+    height: fit-content;
+    padding: 1rem;
+    margin: 0.5vw;
+    border: 1px solid rgba(189, 195, 199, 1.0);
+    color: rgba(44, 62, 80, 1.0);
+    margin-bottom: 0.25rem;
+
+
+}
+
+.product-box-heading {
+    padding: 0.5rem;
+}
+
+.product-box > img {
+    height: 50%;
+    margin-top: 1rem
+}
+
+.product-box-info {
+    padding: 0.5rem;
+
+}
+
+.product-box h3 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.product-box p {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.product-box a {
+    border: 1px solid tomato;
+    padding: 0.3rem;
+    text-align: right;
+}
+
+.myform {
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.form-group {
+    padding-top: 3rem;
+}
+
+.form-label {
+    width: 30%;
+    float: left;
+    padding: 0.3rem;
+}
+
+.form-element {
+    width: 70%;
+    float: left;
+}
+
+.button-group {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.button-group input {
+    padding: 0.3rem;
+}
+
+.form-group input {
+    padding: 0.6rem;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.cart-table > thead {
+    font-weight: bold;
+}
+
+.cart-table td {
+    padding: 0.2rem 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.cart-total {
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .product-box {
+        width: 49%;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .product-box {
+        width: 100%;
+    }
 }
