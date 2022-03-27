@@ -11,20 +11,20 @@
 
 <div class="container">
 
-    <header>
-    <h1 class="font-effect-fire">S   i   t   e</h1>
-    <h2>menu</h2>
-    </header>
+
 
     <nav>
-       <a href="/">home</a> &#8226;
-        <a href="/menu">menu</a> &#8226;
-        <a href="/contact">contact</a>
+        <div class="navbar-brand">
+            <h1 class="font-effect-fire">Smile Cafe</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="/">home</a> &#8226;
+            <a href="/menu">menu</a> &#8226;
+            <a href="/contact">contact</a>
+        </div>
     </nav>
     <main>
         <br>
-        <-----some content----->
-        <div class="products">
         {% for product in products %}
             <div class="product-box">
                 <h3>{{ product[0] }}</h3>
@@ -33,7 +33,6 @@
                 <p><strong>price:</strong>${{ product[4] }}</p>
                 <img src="https://c8.alamy.com/comp/2GG5MMT/lil-uzi-vert-attends-the-18-year-anniversary-of-jay-zs-4040-club-in-new-york-city-on-aug-28-2021-the-club-was-shuttered-for-18-months-due-to-the-covid-19-pandemic-and-re-opened-earlier-this-month-photo-by-gabriele-holtermannsipa-usa-2GG5MMT.jpg">
             </div>
-        </div>
         {% endfor %}
     </main>
 

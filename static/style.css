@@ -22,8 +22,7 @@ header {
 .container {
     width: 60vw;
     margin: auto;
-    /*background-color: rgba(52, 73, 94, 1.0);*/
-    /*color: rgba(236, 240, 241, 1.0);*/
+
 }
 
 .container::after {
@@ -39,7 +38,7 @@ img {
 h1 {
     text-align: center;
     font-weight: 200;
-    font-size: 4rem;
+    font-size: 2rem;
     margin: 0;
 }
 
@@ -52,9 +51,9 @@ h2 {
 nav {
     background-color: rgb(44, 48, 44); /* darkest blue */
     text-align: center;
-    /*color: rgba(52, 152, 219, 1.0);!*light blue*!*/
     font-size: 1.5rem;
     padding-top: 0.4rem;
+    height: 50px;
     padding-bottom: 0.7rem;
     color: rgb(255, 251, 0); /*light blue*/
 }
@@ -70,12 +69,8 @@ nav {
 }
 
 nav a {
-    /*margin:0 0.5rem;*/
     padding: 0 0.5rem;
     font-size: 1.5rem;
-
-    /*border: 1px solid rgba(52, 152, 219, 1.0);*/
-    /*border-radius:0.5rem;*/
 }
 
 nav a:hover {
@@ -86,30 +81,22 @@ nav a:hover {
 
 a, a:visited {
     color: inherit;
-    /*color:hotpink;*/
     text-decoration: none;
 }
 
 .product-box img {
-    /*max-width:200px;*/
+    max-width:250px;
 }
 
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-}
 
 .product-box {
+    float: left;
     width: 25%;
     height: fit-content;
     padding: 1rem;
-    margin: 0.5vw;
     border: 1px solid rgba(189, 195, 199, 1.0);
     color: rgba(44, 62, 80, 1.0);
     margin-bottom: 0.25rem;
-
 
 }
 
