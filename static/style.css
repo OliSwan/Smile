@@ -94,18 +94,21 @@ a, a:visited {
     width: 25%;
     height: fit-content;
     padding: 1rem;
-    border: 1px solid rgba(189, 195, 199, 1.0);
     color: rgba(44, 62, 80, 1.0);
     margin-bottom: 0.25rem;
+    background-color: #dddddd;
 
 }
 
+.product-box:hover {
+    opacity: 50%;
+}
 .product-box-heading {
     padding: 0.5rem;
 }
 
 .product-box > img {
-    height: 50%;
+    height: 200px;
     margin-top: 1rem
 }
 

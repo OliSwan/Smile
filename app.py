@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-
 app = Flask(__name__)
 
 
@@ -10,9 +9,14 @@ def render_home():
 
 @app.route('/menu')
 def render_menu():
-    product_list = [["Flat White", "Definitely created in New Zealand (not in the West Island) - a classic. ", "180mL", "flatwhite", "4.00"], ["Latte", "The New Zealand latte is larger than a flat white and has more foamy milk.", "240mL", "latte", "4.00"],
-    ["Espresso", "Straight from the machine, 60mL including crema.", "60mL", "espresso", "3.00"],
-    ["Long black", "Hot water + espresso. 120mL.", "90mL", "longblack", "3.00"]]
+    con = create_connection(DB_NAME)
+    query= "SELECT name, description, volume, price, image FROM product"
+
+    cur = con.cursor()
+    cur.execute(query)
+    product_list = cur.fetchall()
+    con.close()
+
     return render_template('menu.html', products=product_list)
 
 
